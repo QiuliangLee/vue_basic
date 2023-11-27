@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8"/>
         <title>列表过滤</title>
-        <script type="text/javascript" src="../js/vue.js"></script>
+        <script src="../js/vue.js" type="text/javascript"></script>
     </head>
     <body>
         <!-- 准备好一个容器-->
         <div id="root">
             <h2>人员列表</h2>
-            <input type="text" placeholder="请输入名字" v-model="keyWord">
+            <input placeholder="请输入名字" type="text" v-model="keyWord">
             <ul>
-                <li v-for="(p,index) of filPerons" :key="index">
+                <li :key="index" v-for="(p,index) of filPerons">
                     {{p.name}}-{{p.age}}-{{p.sex}}
                 </li>
             </ul>

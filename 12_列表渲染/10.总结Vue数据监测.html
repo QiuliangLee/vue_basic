@@ -9,7 +9,7 @@
             }
         </style>
         <!-- 引入Vue -->
-        <script type="text/javascript" src="../js/vue.js"></script>
+        <script src="../js/vue.js" type="text/javascript"></script>
     </head>
     <body>
         <!--
@@ -58,13 +58,13 @@
             <h3 v-if="student.sex">性别：{{student.sex}}</h3>
             <h3>爱好：</h3>
             <ul>
-                <li v-for="(h,index) in student.hobby" :key="index">
+                <li :key="index" v-for="(h,index) in student.hobby">
                     {{h}}
                 </li>
             </ul>
             <h3>朋友们：</h3>
             <ul>
-                <li v-for="(f,index) in student.friends" :key="index">
+                <li :key="index" v-for="(f,index) in student.friends">
                     {{f.name}}--{{f.age}}
                 </li>
             </ul>

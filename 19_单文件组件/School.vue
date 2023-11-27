@@ -1,5 +1,5 @@
 <template>
-<!--    组件的结构html-->
+    <!--    组件的结构html-->
     <div class="demo">
         <h2>学校名称：{{ name }}</h2>
         <h2>学校地址：{{ address }}</h2>
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-//    组件交互的代码（数据、方法等等）js
+    //    组件交互的代码（数据、方法等等）js
     export default {
         name: 'School',
         data() {
@@ -26,7 +26,7 @@
 </script>
 
 <style>
-/*    组件的样式css*/
+    /*    组件的样式css*/
     .demo {
         background-color: #cb15a2;
     }

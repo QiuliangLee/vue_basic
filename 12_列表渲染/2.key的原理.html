@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <title>key的原理</title>
-        <script type="text/javascript" src="../js/vue.js"></script>
+        <script src="../js/vue.js" type="text/javascript"></script>
     </head>
     <body>
         <!--
@@ -39,7 +39,7 @@
             <h2>人员列表（遍历数组）</h2>
             <button @click.once="add">添加一个老刘</button>
             <ul>
-                <li v-for="(p,index) of persons" :key="index">
+                <li :key="index" v-for="(p,index) of persons">
                     {{p.name}}-{{p.age}}
                     <input type="text">
                 </li>
